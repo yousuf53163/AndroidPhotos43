@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditTagsController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="244.0" fitWidth="293.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="347.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:" />
+      <ComboBox fx:id="addedTags" layoutX="386.0" layoutY="10.0" prefWidth="150.0" />
+      <Button fx:id="removeSelectedButton" layoutX="386.0" layoutY="49.0" mnemonicParsing="false" onAction="#removeSelectedButtonPressed" text="Remove Selected Tag" />
+      <ComboBox fx:id="addedTagTypes" layoutX="394.0" layoutY="175.0" onAction="#checkNew" prefWidth="150.0" />
+      <Text layoutX="408.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Tag" wrappingWidth="60.619140625" />
+      <Text layoutX="304.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Type:" />
+      <Text layoutX="308.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Tag Type:" />
+      <TextField fx:id="newTagType" layoutX="395.0" layoutY="218.0" />
+      <Text layoutX="307.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag:" />
+      <TextField fx:id="newTag" layoutX="395.0" layoutY="276.0" />
+      <Button fx:id="addButton" layoutX="394.0" layoutY="323.0" mnemonicParsing="false" onAction="#addButtonPressed" text="Add Tag" />
+      <Button fx:id="backButton" layoutX="27.0" layoutY="335.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+      <CheckBox fx:id="mult" layoutX="395.0" layoutY="250.0" mnemonicParsing="false" text="Can have Multiple" />
+      <Text layoutX="25.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" />
+      <Text fx:id="caption" layoutX="88.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAPTION CONTENT" />
+      <TextField fx:id="newCap" layoutX="25.0" layoutY="297.0" prefHeight="25.0" prefWidth="159.0" />
+      <Button fx:id="addCaption" layoutX="194.0" layoutY="297.0" mnemonicParsing="false" onAction="#addCaptionButtonPressed" text="Change Caption" />
+   </children>
+</Pane>

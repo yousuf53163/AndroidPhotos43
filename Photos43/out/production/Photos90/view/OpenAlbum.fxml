@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OpenAlbumController">
+    <children>
+        <Button fx:id="addPhotoButton" layoutX="93.0" layoutY="359.0" mnemonicParsing="false" onAction="#addButtonPressed" text="Add Photo" />
+        <Button fx:id="backButton" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+        <Button fx:id="deletePhotoButton" layoutX="197.0" layoutY="359.0" mnemonicParsing="false" onAction="#deleteButtonPressed" text="Delete Photo" />
+      <ListView fx:id="photoListView" layoutX="14.0" layoutY="14.0" prefHeight="334.0" prefWidth="574.0" />
+      <Button fx:id="viewPhotoButton" layoutX="312.0" layoutY="359.0" mnemonicParsing="false" onAction="#viewPhotoButtonPressed" text="View Photo" />
+      <Button fx:id="copyPhotoButton" layoutX="413.0" layoutY="359.0" mnemonicParsing="false" onAction="#copyPhotoButtonPressed" text="Copy to..." />
+      <Button fx:id="movePhotoButton" layoutX="506.0" layoutY="359.0" mnemonicParsing="false" onAction="#editTagButtonPressed" text="Move to..." />
+        <Button fx:id="editTagButton" layoutX="200.0" layoutY="400.0" mnemonicParsing="false" onAction="#editTagButtonPressed" prefHeight="25.0" prefWidth="161.0" text="Edit Tags &amp; Captions" />
+    </children>
+</AnchorPane>

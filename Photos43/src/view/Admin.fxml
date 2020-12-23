@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+    <children>
+        <Label layoutX="268.0" layoutY="36.0" text="Admin Page" />
+        <Button fx:id="addBTN" layoutX="71.0" layoutY="266.0" mnemonicParsing="false" onAction="#addNewUser" text="Add User" />
+        <Button fx:id="DeleteBTN" layoutX="261.0" layoutY="266.0" mnemonicParsing="false" onAction="#DeleteUser" text="Delete User" />
+        <ListView fx:id="userListView" layoutX="228.0" layoutY="57.0" prefHeight="197.0" prefWidth="178.0" />
+        <TextField fx:id="newUser" layoutX="29.0" layoutY="229.0" />
+        <Button fx:id="logout" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#adminLogOut" text="Log Out" />
+    </children>
+</AnchorPane>

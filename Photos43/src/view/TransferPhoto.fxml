@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="293.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TransferPhotoController">
+   <children>
+      <Button fx:id="copyPhotoButton" layoutX="72.0" layoutY="252.0" mnemonicParsing="false" onAction="#copyPhotoButtonPressed" text="Save" />
+      <ListView fx:id="albumListView" layoutX="14.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an album:" />
+   </children>
+</AnchorPane>

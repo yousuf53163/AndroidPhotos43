@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchResultController">
+    <children>
+        <Button fx:id="backButton" layoutX="35.0" layoutY="32.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+      <Text layoutX="76.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos by Search Criteria" />
+      <ImageView fx:id="imageView" fitHeight="263.0" fitWidth="278.0" layoutX="300.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="previousButton" layoutX="343.0" layoutY="323.0" mnemonicParsing="false" onAction="#previousButtonPressed" text="Previous" />
+      <Button fx:id="nextButton" layoutX="471.0" layoutY="323.0" mnemonicParsing="false" onAction="#nextButtonPressed" text="Next" />
+      <Button fx:id="createAlbum" layoutX="55.0" layoutY="187.0" mnemonicParsing="false" onAction="#createAlbumButtonPressed" text="Create new Album Based off Criteria" />
+      <TextField fx:id="albumName" layoutX="68.0" layoutY="151.0" />
+    </children>
+</AnchorPane>
